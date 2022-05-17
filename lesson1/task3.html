@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let first = 10 + 10 + "10"; // Будет 2010, потому что значния типа числа складываются и склеиваются со значением типа строка
+        let second = 10 + "10" + 10; // оба значения типа числа склеиваются со значиением типа строка
+        let third = 10 + 10 + +"10"; // значение типа строка станет числом из-за унарного плюса
+        let fourth = 10 / -"";
+        let fifth = 10 / +(2, 5);
+
+        console.log(first);
+        console.log(second);
+        console.log(third);
+        console.log(fourth);
+        console.log(fifth);
+    </script>
+</body>
+
+</html>
