@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //
+        // Здесь я использовал методы и функцию специально, для того чтобы по немногу запоминать как их использовать.
+        // И названия методов откладывались в голове :)
+        function getRandomArbitrary(min, max) {
+            return Math.round(Math.random() * (max - min) + min);
+        }
+
+        let a = getRandomArbitrary(-100, 100);
+        let b = getRandomArbitrary(-100, 100);
+
+        console.log(a);
+        console.log(b);
+
+        if (Math.sign(a) >= 0 && Math.sign(b) >= 0) {
+            result = a - b;
+            console.log(result);
+        } else if (Math.sign(a) == -1 && Math.sign(b) == -1) {
+            result = a * b;
+            console.log(result);
+        } else if (Math.sign(a) >= 0 && Math.sign(b) == -1 || Math.sign(b) >= 0 && Math.sign(a) == -1) {
+            result = a + b;
+            console.log(result);
+        } 
+    </script>
+</body>
+
+</html>

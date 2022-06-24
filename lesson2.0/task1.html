@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //пример 1
+        let a = 1, b = 1, c, d;
+        c = ++a;
+        alert(c); // ответ: 2   Используется префиксный инкремент, поэтому переменные "с" и "а" == 2
+        //пример 2
+        d = b++;
+        alert(d); //ответ: 1    Используется постфиксный инкремент, поэтому переменная d = 1, а переменная b = 2     
+        //пример 3
+        c = 2 + ++a;
+        alert(c); //ответ: 5    Используется префиксный инкремент, c = 2 + 3    c == 5
+        //пример 4
+        d = 2 + b++;            // Используется постфиксный инкремент, d = 2 + 2    d == 4  
+        alert(d); //ответ: 4    
+        alert(a); //3
+        alert(b); //3
+    </script>
+</body>
+
+</html>
