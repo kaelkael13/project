@@ -53,6 +53,7 @@
     &__cart {
         width: 41px;
         height: 37px;
+        position: relative;
     }
 
     &__content {
@@ -83,6 +84,11 @@
         }
     }
 
+}
+
+.circleCart {
+    position: absolute;
+    left: 0px;
 }
 
 .content {

@@ -16,7 +16,7 @@
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
-          justify-content: space-between;
+          justify-content: space-around;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -24,6 +24,13 @@
 
 .top__head_right {
   padding-right: 32px;
+}
+
+.cartButton {
+  position: relative;
+  background: #222222;
+  border: none;
+  cursor: pointer;
 }
 
 .top__head_left {
@@ -55,7 +62,7 @@
 
 .top__cart {
   width: 41px;
-  height: 37px;
+  height: 31px;
 }
 
 .top__content {
@@ -94,6 +101,23 @@
   border-left: 12px solid #F16D7F;
   padding-left: 15px;
   min-width: inherit;
+}
+
+.circleCart {
+  position: absolute;
+  left: 30px;
+  top: -4px;
+}
+
+.circleCart img {
+  position: relative;
+}
+
+.circleCart p {
+  position: absolute;
+  right: 7px;
+  top: 3px;
+  color: white;
 }
 
 .content {
