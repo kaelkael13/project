@@ -24,6 +24,18 @@
 
 .top__head_right {
   padding-right: 32px;
+  position: relative;
+}
+
+.popupCart {
+  position: absolute;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 66px;
+  top: 47px;
+  right: 32px;
+  background-color: white;
+  padding: 10px 10px;
 }
 
 .cartButton {
